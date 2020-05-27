@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+  <div class="row">
+    <div class="col-lg-8">
+        <h1 class="page-header">Data Lengkap</h1>
+    </div>
+  <div><!--/.row-->
+
+  <div class="col-md-12">
+    <div class="panel panel-info">
+      <div class="panel-heading">Biodata
+        <span class="pull-right clickable panel-toggle"><em class="fa fa-toggle-up"></em></span></div>
+      <div class="panel-body">
+        <div class="card-body text-primary">
+          <p class="card-text"><b>Nama Lengkap : </b> Arsy Al-Hamzah</p>
+          <p class="card-text"><b>Nomor KMS : </b> 12345678910</p>
+          <p class="card-text"><b>Nama Ibu : </b> Aminah</p>
+          <p class="card-text"><b>Alamat Lengkap : </b> Jln. Baru, Dusun Aria, RT 001, RW 002</p>
+          <p class="card-text"><b>Desa : </b> Lamcot</p>
+          <button type="button" class="btn btn-warning">Edit Biodata</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">Tabel Pencatatan
+        <span class="pull-right clickable panel-toggle"><em class="fa fa-toggle-up"></em></span></div>
+      <div class="panel-body">
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center-sm">Tanggal</th>
+              <th scope="col" class="text-center">Tinggi Badan (cm)</th>
+              <th scope="col" class="text-center">Berat Badan (kg)</th>
+              <th scope="col" class="text-center">Vaksin yang Diberikan</th>
+              <th scope="col" class="text-center">Asupan yang diberikan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">1-2-2020</td>
+              <td class="text-center">30</td>
+              <td class="text-center">4.8</td>
+              <td class="text-center">Vitamin A, Polio</td>
+              <td class="text-center">Bubur Sum</td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" class="btn btn-success">Tambahkan Data</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
